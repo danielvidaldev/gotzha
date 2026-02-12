@@ -1,0 +1,7 @@
+{
+    "buildCommand": "VITE_MOCK_API=true npm run build && node scripts/build-static.mjs",
+    "outputDirectory": "dist",
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/index.html" }
+    ]
+}
